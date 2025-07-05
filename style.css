@@ -1,0 +1,565 @@
+:root {
+  --primary: #004080;
+  --secondary: #66a3ff;
+  --highlight: #cce0ff;
+  --accent: #ffcc00;
+  --text-dark: #000;
+  --text-light: #fff;
+  --neutral: #f2f2f2;
+  --border: #ccc;
+  --success: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--neutral);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+section {
+  padding: 4vh 5vw;
+}
+
+header {
+  height: 125px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#header-img {
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#nav-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: var(--highlight);
+  color: var(--text-dark);
+}
+
+main {
+  margin-top: 125px;
+}
+
+#willkommen {
+  scroll-margin-top: 135px;
+  height: calc(100vh - 125px);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 10px solid var(--highlight);
+}
+
+#notfall {
+  margin-left: 10vw;
+  background-color: var(--accent);
+  border: 3px solid var(--text-dark);
+  border-radius: 20px;
+  width: 50vw;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  height: 40vh;
+}
+
+#notfall h1 {
+  font-size: 4vw;
+}
+
+#notfall p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#telefon-link {
+  text-decoration: none;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+  color: var(--text-dark);
+  margin-top: 3rem;
+}
+
+#telefon-link:hover {
+  background-color: var(--success);
+  color: var(--text-light);
+}
+
+#arbeiter {
+  height: 60vh;
+  width: auto;
+  margin-right: 5vw;
+}
+
+#dienstleistungen {
+  scroll-margin-top: 135px;
+  background-color: var(--neutral);
+  text-align: center;
+  border-top: 10px solid var(--highlight);
+  border-bottom: 10px solid var(--highlight);
+}
+
+#dienstleistungen h1 {
+  font-size: 3vw;
+  margin-bottom: 2vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  border: 3px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.dienstleistungimg {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.text {
+  flex: 2;
+}
+
+.text h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#kontakt {
+  scroll-margin-top: 135px;
+  background-color: var(--highlight);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-top: 10px solid var(--primary);
+  border-bottom: 10px solid var(--primary);
+}
+
+.kontakt-info {
+  flex: 1;
+  min-width: 250px;
+  margin: 2vh 2vw;
+}
+
+.kontakt-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+
+.kontakt-info p {
+  margin: 5px 0;
+}
+
+.social-media i {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-right: 15px;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.social-media i:hover {
+  transform: scale(1.2);
+}
+
+.formular-box {
+  flex: 1;
+  min-width: 300px;
+  margin: 2vh 2vw;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 45%;
+}
+
+.form-input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 1vh;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--text-dark);
+  color: var(--accent);
+}
+
+#bewertungen {
+  scroll-margin-top: 135px;
+  background-color: white;
+  border-top: 10px solid var(--highlight);
+  text-align: center;
+}
+
+#bewertungen h1 {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+}
+
+.karussell {
+  width: 60vw;
+  height: 40vh;
+  margin: auto;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--neutral);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.bewertung {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 1vw 0 1vw;
+}
+
+.bewertung.active {
+  display: flex;
+}
+
+.sterne {
+  color: var(--accent);
+  font-size: 3rem;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 1vh;
+  font-size: 1.5rem;
+}
+
+.button-left, .button-right {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-left { 
+  left: 10px; 
+}
+
+.button-right {
+  right: 10px; 
+}
+
+#karriere {
+  background-color: var(--highlight);
+  text-align: center;
+  border-top: 10px solid var(--primary);
+  scroll-margin-top: 125px;
+}
+
+#karriere h1 {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+
+#karriere p {
+  font-size: 1.2rem; 
+  margin-bottom: 1vh;
+}
+
+#stellenanzeige {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stelle {
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 40%;
+  min-width: 300px;
+  background-color: white;
+}
+
+.stelle h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.stelle h4 {
+  font-size: 1.2rem;
+  margin-top: 1vh;
+}
+
+.stelle li {
+  margin-top: 1vh;
+  font-size: 1rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--text-light);
+}
+
+
+#footer {
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+#footer h3 {
+  border-bottom: 1px solid var(--text-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#footer p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    nav#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 0;
+    position: absolute;
+    gap: 10px;
+  }
+
+  nav#nav-bar a {
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    max-width: 20%;
+    height: auto;
+  }
+
+  #willkommen {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #telefon-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  #notfall {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #arbeiter {
+    visibility: hidden;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .kontakt-info, .formular-box {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #stellenanzeige {
+    flex-direction: column;
+  }
+
+  .stelle {
+    width: 100%;
+  }
+
+  .button-left,
+  .button-right {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .karussell {
+    flex-direction: column;
+  }
+
+  .bewertung {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    align-items: center;
+  }
+
+  #nav-bar {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .karussell {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .bewertung {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #stellenanzeige {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stelle {
+    width: 100%;
+  }
+}
+
+

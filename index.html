@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elektrowebsite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="Assets/image.png" alt="Firmenlogo" id="header-img">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#willkommen">Start</a>
+        <a class="nav-link" href="#dienstleistungen">Dienstleistungen</a>
+        <a class="nav-link" href="#kontakt">Kontakt</a>
+        <a class="nav-link" href="#bewertungen">Bewertungen</a>
+        <a class="nav-link" href="#karriere">Karriere</a>
+      </nav>
+    </header>
+    <main>
+      <section id="willkommen">
+        <div id="notfall">
+          <h1>Firma GmbH</h1>
+          <p><strong>Wir behandeln Ihren Notfall, als wäre es unser eigener, Kontaktieren Sie uns heute noch</strong></p>
+          <a href="tel:+491234567890" id="telefon-link">
+            <i class="fas fa-phone"></i> +491234567890
+          </a>
+        </div>
+        <img src="Assets/arbeiter-der-auf-einer-leiter-sich-lehnt-32242058-3892426.jpg" alt="Arbeiter neben Leiter" id="arbeiter">
+      </section>
+      <section id="dienstleistungen">
+        <h1>Unsere Dienstleistungen</h1>
+        <div class="container">
+          <div class="item">
+            <img src="Assets/Elektroinstallation.jpg" alt="Arbeiter am Stromkasten mit Strommessgerät" class="dienstleistungimg">
+            <div class="text">
+              <h2>Elektroinstallation</h2>
+              <p>Wir bieten umfassende Elektroinstallationsdienste für Wohn- und Gewerbeimmobilien an. Unser erfahrenes Team sorgt dafür, dass alle elektrischen Systeme sicher und effizient installiert werden. Von der Planung bis zur Ausführung stehen wir Ihnen zur Seite, um maßgeschneiderte Lösungen zu entwickeln, die Ihren spezifischen Anforderungen entsprechen.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text">
+              <h2>Energieberatung</h2>
+              <p>Unsere Energieberatung hilft Ihnen, den Energieverbrauch zu optimieren und Kosten zu sparen. Wir analysieren Ihre bestehenden Systeme und geben Ihnen Empfehlungen zur Verbesserung der Energieeffizienz. Durch den Einsatz moderner Technologien und nachhaltiger Lösungen unterstützen wir Sie dabei, umweltfreundlicher zu wirtschaften und Ihre Energiekosten zu senken.</p>
+            </div>
+            <img src="Assets/Energieberatung.jpg" alt="Energieausweis mit Haus im Hintergrund" class="dienstleistungimg">
+          </div>
+          <div class="item">
+            <img src="Assets/Smart-home.jpg" alt="Smart Home Visualisierung" class="dienstleistungimg">
+            <div class="text">
+              <h2>Smart Home</h2>
+              <p>Verwandeln Sie Ihr Zuhause in ein intelligentes Zuhause mit unseren Smart Home Lösungen. Wir bieten die Installation und Integration von smarten Geräten, die Ihnen mehr Komfort, Sicherheit und Energieeffizienz bieten. Steuern Sie Beleuchtung, Heizung und Sicherheitssysteme bequem über Ihr Smartphone oder Sprachassistenten.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="text">
+              <h2>Wartung und Reparatur</h2>
+              <p>Unser Wartungs- und Reparaturservice sorgt dafür, dass Ihre elektrischen Systeme stets in einwandfreiem Zustand sind. Wir bieten regelmäßige Inspektionen und schnelle Reparaturen, um Ausfallzeiten zu minimieren und die Sicherheit zu gewährleisten. Vertrauen Sie auf unsere Fachkenntnisse, um Probleme frühzeitig zu erkennen und zu beheben.</p>
+            </div>
+            <img src="Assets/Wartung.jpg" alt="Elektriker am reparieren eines Backofens" class="dienstleistungimg">
+          </div>
+        </div>
+      </section>
+      <section id="kontakt">
+        <div class="kontakt-info">
+          <h1>Kontaktieren Sie uns!</h1>
+          <p>Öffnungszeiten: <br><i class="fas fa-clock"></i> Montag - Freitag: 9:00 - 17:00 Uhr</p>
+          <p>Adresse: <br><i class="fas fa-home"></i> Musterstraße 1, 12345 Musterstadt</p>
+          <p>Telefon: <br><i class="fas fa-phone"></i> +49 123 4567890</p>
+          <div class="social-media">
+            <h3>Folgen Sie uns:</h3>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="formular-box">
+          <form action="Server" method="post" id="kontakt-formular">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required class="form-input">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+491234567890" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="deine.email@beispiel.com" required class="form-input">
+              </div>
+            </div>
+            <div id="nachricht-group">
+              <label for="nachricht">Nachricht:</label>
+              <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht hier..." required></textarea>
+            </div>
+            <div id="button-group">
+              <button type="submit">Absenden</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="bewertungen">
+        <h1>Überzeugen Sie sich selbst!</h1>
+        <div class="karussell">
+          <button class="button-left" onclick="prevBewertung()">&#10094;</button>
+          <div class="bewertung active">
+              <div class="sterne">★★★★★</div>
+              <div class="text"><p>"Das Preisleistungsverhältnis war hervorragend und die Arbeit wurde sehr schnell erledigt!"</p></div>
+              <div class="name">- Max Mustermann</div>
+          </div>
+          <div class="bewertung">
+              <div class="sterne">★★★★★</div>
+              <div class="text"><p>"Es hat einfach alles gestimmt! Von Preis bis Kommunikation hat alles gestimmt!"</p></div>
+              <div class="name">- Anna Müller</div>
+          </div>
+          <div class="bewertung">
+          <div class="sterne">★★★★★</div>
+          <div class="text"><p>"Es gab bei mir einen Stromausfall, allerdings hat mir die Beispiel-Firma schnell helfen können und das sogar zu einem sehr guten und unerwarteten Preis! Ich kann Sie nur weiterempfehlen!"</p></div>
+          <div class="name">- Peter Schmidt</div>
+          </div>
+          <button class="button-right" onclick="nextBewertung()">&#10095;</button>
+        </div>    
+      </section>
+      <section id="karriere">
+        <h1>Karriere bei uns</h1>
+        <p>Wir suchen motivierte Elektriker:innen und Auszubildende!</p>
+        <div id="stellenanzeige">
+          <div class="stelle">
+            <h3>Elektriker:in (m/w/d)</h3>
+            <h4>Was Sie bei uns als Arbeiter erwarten können:</h4>
+            <ul>
+              <li>Attraktive Vergütung und zusätzliche finanzielle Anreize.</li>
+              <li>Möglichkeiten für beruflichen Aufstieg und Spezialisierung.</li>
+              <li>Zugang zu Fortbildungen und Zertifizierungen, um die Fähigkeiten zu erweitern.</li>
+              <li>Stabilität in einem wachsenden Sektor mit hoher Nachfrage nach Fachkräften.</li>
+              <li>Arbeiten mit innovativen Technologien und Werkzeugen.</li>
+              <li>Angebote zur Altersvorsorge für finanzielle Sicherheit im Alter.</li>
+              <li>Programme zur Gesundheitsförderung und Fitnessangebote.</li>
+              <li>Zusammenarbeit in einem unterstützenden Team.</li>
+            </ul>
+            <a href="#"><button class="btn">Jetzt Bewerben!</button></a>
+          </div>
+          <div class="stelle">
+            <h3>Auszubildende:r</h3>  
+            <h4>Was Sie bei uns als Azubi erwarten können:</h4>
+            <ul>
+              <li>Wettbewerbsfähige Gehälter, die mit der Ausbildung steigen.</li>
+              <li>Zugang zu Schulungen und Workshops, um Fähigkeiten zu erweitern.</li>
+              <li>Mitarbeit an realen Projekten, um praktische Kenntnisse zu erwerben.</li>
+              <li>Unterstützung durch erfahrene Kollegen, die als Mentoren fungieren.</li>
+              <li>Einsatz neuester Technologien und Werkzeuge.</li>
+              <li>Ein unterstützendes und kollegiales Arbeitsumfeld.</li>
+              <li>Klare Aufstiegsmöglichkeiten nach der Ausbildung.</li>
+              <li>Möglichkeiten für flexible Arbeitszeiten, um die Ausbildung zu erleichtern.</li>
+            </ul>
+            <a href="#"><button class="btn">Jetzt Bewerben!</button></a>
+          </div>
+        </div>
+      </section>
+      </main>
+      <footer id="footer">
+        <h3>Impressum</h3>
+        <p>Dies ist eine Demo-Website zur Präsentation von Webdesign-Fähigkeiten.  
+          Alle Inhalte sind fiktiv und dienen nur zur Veranschaulichung.</p>
+        <h3>Datenschutzhinweis</h3>
+        <p>Diese Website speichert keine personenbezogenen Daten. Es werden keine Cookies oder Tracker verwendet.</p>
+      </footer>
+  </body>
+</html>
